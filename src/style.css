@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  background-color: black;
+  padding: 1.5rem;
+  max-width: 100vw;
+  border-radius: 5px;
+}
+.numbers {
+  width: 17.5rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  text-align: end;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  caret-color: transparent;
+  user-select: auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: .7rem;
+}
+.button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  background-color: gray;
+  border: none;
+  font-size: 22px;
+  outline: none;
+  transition: background-color .3s;
+}
+.button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.button.operator {
+  background-color: darkorange;
+  font-size: 25px;
+  font-weight: bold;
+}
+.button.operator:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+.button.operator.active {
+  background-color: white;
+  color: darkorange;
+
+}
+
+.button.firstThree {
+  background-color: lightgray;
+}
+
+.button.firstThree:hover{
+  background-color:white;
+  cursor: pointer;
+}
+.button.number.null {
+  width: 13.5rem;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

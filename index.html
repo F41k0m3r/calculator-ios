@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script type="module" src="/src/script.ts" defer></script>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div id="app" class="calculator">
+      <input type="number" id="input" class="numbers"  readonly>
+      <div class="row">
+        <button class="button firstThree" id="clear">AC</button>
+        <button class="button firstThree" id="change">±</button>
+        <button class="button firstThree" id="percent">%</button>
+        <button class="button operator" id="divide">÷</button>
+      </div>
+      <div class="row">
+        <button class="button number">7</button>
+        <button class="button number">8</button>
+        <button class="button number">9</button>
+        <button class="button operator" id="multiply">x</button>
+      </div>
+      <div class="row">
+        <button class="button number">4</button>
+        <button class="button number">5</button>
+        <button class="button number">6</button>
+        <button class="button operator" id="minus">-</button>
+      </div>
+      <div class="row">
+        <button class="button number">1</button>
+        <button class="button number">2</button>
+        <button class="button number">3</button>
+        <button class="button operator" id="plus">+</button>
+      </div>
+      <div class="row">
+        <button class="button number null" id="number">0</button>
+        <button class="button operator" id="solve">=</button>
+      </div>
+    </div>
+  </body>
+</html>
